@@ -91,8 +91,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Actuator_AX_CAN"
-Date "2017-11-19"
-Rev "1.0"
+Date "2017-12-31"
+Rev "1.1"
 Comp "Electropioneer"
 Comment1 ""
 Comment2 ""
@@ -108,28 +108,6 @@ F 1 "Arduino_Nano_v3.x" H 7500 2750 50  0000 R CNN
 F 2 "Modules:Arduino_Nano_WithMountingHoles" H 7850 850 50  0001 L CNN
 F 3 "" H 7700 800 50  0001 C CNN
 	1    7700 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCP2551-I-SN U2
-U 1 1 5A102BD2
-P 6250 4150
-F 0 "U2" H 5850 4500 50  0000 L CNN
-F 1 "MCP2551-I-SN" H 6350 4500 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6250 3650 50  0001 C CIN
-F 3 "" H 6250 4150 50  0001 C CNN
-	1    6250 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCP2515-I/ST U1
-U 1 1 5A102C13
-P 3950 4100
-F 0 "U1" H 3550 4875 50  0000 R CNN
-F 1 "MCP2515-I/ST" H 4700 4900 50  0000 R TNN
-F 2 "Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm" H 3950 3200 50  0001 C CIN
-F 3 "" H 4050 3300 50  0001 C CNN
-	1    3950 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -149,7 +127,7 @@ U 1 1 5A102FC1
 P 900 1000
 F 0 "P1" H 900 1150 50  0000 C CNN
 F 1 "CONN_01X02" V 1000 1000 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 900 1000 50  0001 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 900 1000 50  0001 C CNN
 F 3 "" H 900 1000 50  0000 C CNN
 	1    900  1000
 	-1   0    0    1   
@@ -160,7 +138,7 @@ U 1 1 5A103509
 P 2350 1000
 F 0 "P3" H 2350 1200 50  0000 C CNN
 F 1 "CONN_01X03" V 2450 1000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2350 1000 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2350 1000 50  0001 C CNN
 F 3 "" H 2350 1000 50  0000 C CNN
 	1    2350 1000
 	1    0    0    -1  
@@ -171,20 +149,9 @@ U 1 1 5A103594
 P 2700 1000
 F 0 "P4" H 2700 1200 50  0000 C CNN
 F 1 "CONN_01X03" V 2800 1000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2700 1000 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2700 1000 50  0001 C CNN
 F 3 "" H 2700 1000 50  0000 C CNN
 	1    2700 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X03 P5
-U 1 1 5A1035CF
-P 3050 1000
-F 0 "P5" H 3050 1200 50  0000 C CNN
-F 1 "CONN_01X03" V 3150 1000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3050 1000 50  0001 C CNN
-F 3 "" H 3050 1000 50  0000 C CNN
-	1    3050 1000
 	1    0    0    -1  
 $EndComp
 Text GLabel 2100 1000 0    60   Input ~ 0
@@ -197,7 +164,7 @@ U 1 1 5A105124
 P 700 1950
 F 0 "P2" H 700 2100 50  0000 C CNN
 F 1 "CONN_01X02" V 800 1950 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 700 1950 50  0001 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 700 1950 50  0001 C CNN
 F 3 "" H 700 1950 50  0000 C CNN
 	1    700  1950
 	-1   0    0    1   
@@ -225,8 +192,8 @@ Text GLabel 7150 1800 0    60   Input ~ 0
 A_D6
 Text GLabel 7150 1900 0    60   Input ~ 0
 A_D7
-Text GLabel 7150 2000 0    60   Input ~ 0
-A_D8
+Text GLabel 7150 1500 0    60   Input ~ 0
+A_D3
 Text GLabel 7150 2100 0    60   Input ~ 0
 A_D9
 Text GLabel 7150 2200 0    60   Input ~ 0
@@ -254,10 +221,10 @@ A_A1
 Text GLabel 1800 4350 2    60   Input ~ 0
 A_A0
 $Comp
-L +5V #PWR31
+L +5V #PWR24
 U 1 1 5A1086DE
 P 7900 750
-F 0 "#PWR31" H 7900 600 50  0001 C CNN
+F 0 "#PWR24" H 7900 600 50  0001 C CNN
 F 1 "+5V" H 7900 890 50  0000 C CNN
 F 2 "" H 7900 750 50  0001 C CNN
 F 3 "" H 7900 750 50  0001 C CNN
@@ -265,10 +232,10 @@ F 3 "" H 7900 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR32
+L +5V #PWR25
 U 1 1 5A10870E
 P 8250 1600
-F 0 "#PWR32" H 8250 1450 50  0001 C CNN
+F 0 "#PWR25" H 8250 1450 50  0001 C CNN
 F 1 "+5V" H 8250 1740 50  0000 C CNN
 F 2 "" H 8250 1600 50  0001 C CNN
 F 3 "" H 8250 1600 50  0001 C CNN
@@ -276,10 +243,10 @@ F 3 "" H 8250 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR28
+L GND #PWR21
 U 1 1 5A108A13
 P 7700 2850
-F 0 "#PWR28" H 7700 2600 50  0001 C CNN
+F 0 "#PWR21" H 7700 2600 50  0001 C CNN
 F 1 "GND" H 7700 2700 50  0000 C CNN
 F 2 "" H 7700 2850 50  0001 C CNN
 F 3 "" H 7700 2850 50  0001 C CNN
@@ -287,10 +254,10 @@ F 3 "" H 7700 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR30
+L GND #PWR23
 U 1 1 5A108A43
 P 7800 2850
-F 0 "#PWR30" H 7800 2600 50  0001 C CNN
+F 0 "#PWR23" H 7800 2600 50  0001 C CNN
 F 1 "GND" H 7800 2700 50  0000 C CNN
 F 2 "" H 7800 2850 50  0001 C CNN
 F 3 "" H 7800 2850 50  0001 C CNN
@@ -302,10 +269,10 @@ A_LS_TX
 Text GLabel 5950 1700 2    60   Input ~ 0
 A_LS_RX
 $Comp
-L +5V #PWR21
+L +5V #PWR18
 U 1 1 5A1097EC
 P 4900 1600
-F 0 "#PWR21" H 4900 1450 50  0001 C CNN
+F 0 "#PWR18" H 4900 1450 50  0001 C CNN
 F 1 "+5V" H 4900 1740 50  0000 C CNN
 F 2 "" H 4900 1600 50  0001 C CNN
 F 3 "" H 4900 1600 50  0001 C CNN
@@ -313,10 +280,10 @@ F 3 "" H 4900 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR22
+L GND #PWR19
 U 1 1 5A10A53B
 P 4900 2800
-F 0 "#PWR22" H 4900 2550 50  0001 C CNN
+F 0 "#PWR19" H 4900 2550 50  0001 C CNN
 F 1 "GND" H 4900 2650 50  0000 C CNN
 F 2 "" H 4900 2800 50  0001 C CNN
 F 3 "" H 4900 2800 50  0001 C CNN
@@ -329,200 +296,6 @@ Text GLabel 5950 2400 2    60   Input ~ 0
 AX_S
 Text GLabel 4400 2700 0    60   Input ~ 0
 A_CONTROL
-$Comp
-L +5V #PWR16
-U 1 1 5A10B4CB
-P 3950 3250
-F 0 "#PWR16" H 3950 3100 50  0001 C CNN
-F 1 "+5V" H 3950 3390 50  0000 C CNN
-F 2 "" H 3950 3250 50  0001 C CNN
-F 3 "" H 3950 3250 50  0001 C CNN
-	1    3950 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR17
-U 1 1 5A10B5E0
-P 3950 4950
-F 0 "#PWR17" H 3950 4700 50  0001 C CNN
-F 1 "GND" H 3950 4800 50  0000 C CNN
-F 2 "" H 3950 4950 50  0001 C CNN
-F 3 "" H 3950 4950 50  0001 C CNN
-	1    3950 4950
-	1    0    0    -1  
-$EndComp
-Text GLabel 4600 3500 2    60   Input ~ 0
-RX_CAN
-Text GLabel 4600 3600 2    60   Input ~ 0
-TX_CAN
-Text GLabel 5700 3950 0    60   Input ~ 0
-TX_CAN
-Text GLabel 5700 4050 0    60   Input ~ 0
-RX_CAN
-$Comp
-L GND #PWR25
-U 1 1 5A10BB9E
-P 6250 4750
-F 0 "#PWR25" H 6250 4500 50  0001 C CNN
-F 1 "GND" H 6250 4600 50  0000 C CNN
-F 2 "" H 6250 4750 50  0001 C CNN
-F 3 "" H 6250 4750 50  0001 C CNN
-	1    6250 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR24
-U 1 1 5A10BC99
-P 6250 3700
-F 0 "#PWR24" H 6250 3550 50  0001 C CNN
-F 1 "+5V" H 6250 3840 50  0000 C CNN
-F 2 "" H 6250 3700 50  0001 C CNN
-F 3 "" H 6250 3700 50  0001 C CNN
-	1    6250 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R5
-U 1 1 5A10BF11
-P 6850 4450
-F 0 "R5" V 6930 4450 50  0000 C CNN
-F 1 "120" V 6850 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6780 4450 50  0001 C CNN
-F 3 "" H 6850 4450 50  0001 C CNN
-	1    6850 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X03 P7
-U 1 1 5A10C371
-P 7350 4150
-F 0 "P7" H 7350 4350 50  0000 C CNN
-F 1 "CONN_01X03" V 7450 4150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 7350 4150 50  0001 C CNN
-F 3 "" H 7350 4150 50  0000 C CNN
-	1    7350 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR26
-U 1 1 5A10C614
-P 7150 4300
-F 0 "#PWR26" H 7150 4050 50  0001 C CNN
-F 1 "GND" H 7150 4150 50  0000 C CNN
-F 2 "" H 7150 4300 50  0001 C CNN
-F 3 "" H 7150 4300 50  0001 C CNN
-	1    7150 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R4
-U 1 1 5A10C8A7
-P 5700 4550
-F 0 "R4" V 5780 4550 50  0000 C CNN
-F 1 "4.7K" V 5700 4550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5630 4550 50  0001 C CNN
-F 3 "" H 5700 4550 50  0001 C CNN
-	1    5700 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR23
-U 1 1 5A10C8F9
-P 5700 4750
-F 0 "#PWR23" H 5700 4500 50  0001 C CNN
-F 1 "GND" H 5700 4600 50  0000 C CNN
-F 2 "" H 5700 4750 50  0001 C CNN
-F 3 "" H 5700 4750 50  0001 C CNN
-	1    5700 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R3
-U 1 1 5A10D018
-P 4600 4900
-F 0 "R3" V 4680 4900 50  0000 C CNN
-F 1 "10K" V 4600 4900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4530 4900 50  0001 C CNN
-F 3 "" H 4600 4900 50  0001 C CNN
-	1    4600 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR20
-U 1 1 5A10D193
-P 4600 5100
-F 0 "#PWR20" H 4600 4950 50  0001 C CNN
-F 1 "+5V" H 4600 5240 50  0000 C CNN
-F 2 "" H 4600 5100 50  0001 C CNN
-F 3 "" H 4600 5100 50  0001 C CNN
-	1    4600 5100
-	-1   0    0    1   
-$EndComp
-Text GLabel 3250 3500 0    60   Input ~ 0
-A_MOSI
-Text GLabel 3250 3600 0    60   Input ~ 0
-A_MISO
-Text GLabel 3250 3800 0    60   Input ~ 0
-A_SCK
-$Comp
-L Crystal Y1
-U 1 1 5A10E529
-P 3000 4350
-F 0 "Y1" H 3000 4500 50  0000 C CNN
-F 1 "Crystal" H 3000 4200 50  0000 C CNN
-F 2 "Crystals:Crystal_HC49-U_Vertical" H 3000 4350 50  0001 C CNN
-F 3 "" H 3000 4350 50  0001 C CNN
-	1    3000 4350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L C C3
-U 1 1 5A10E844
-P 2750 4150
-F 0 "C3" H 2775 4250 50  0000 L CNN
-F 1 "C" H 2775 4050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2788 4000 50  0001 C CNN
-F 3 "" H 2750 4150 50  0001 C CNN
-	1    2750 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L C C4
-U 1 1 5A10E897
-P 2750 4550
-F 0 "C4" H 2775 4650 50  0000 L CNN
-F 1 "C" H 2775 4450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2788 4400 50  0001 C CNN
-F 3 "" H 2750 4550 50  0001 C CNN
-	1    2750 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR12
-U 1 1 5A10E9CB
-P 2550 4150
-F 0 "#PWR12" H 2550 3900 50  0001 C CNN
-F 1 "GND" H 2550 4000 50  0000 C CNN
-F 2 "" H 2550 4150 50  0001 C CNN
-F 3 "" H 2550 4150 50  0001 C CNN
-	1    2550 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR13
-U 1 1 5A10EA09
-P 2550 4550
-F 0 "#PWR13" H 2550 4300 50  0001 C CNN
-F 1 "GND" H 2550 4400 50  0000 C CNN
-F 2 "" H 2550 4550 50  0001 C CNN
-F 3 "" H 2550 4550 50  0001 C CNN
-	1    2550 4550
-	0    1    1    0   
-$EndComp
-Text GLabel 3250 3700 0    60   Input ~ 0
-A_SS
-Text GLabel 4600 4100 2    60   Input ~ 0
-A_INT
 $Comp
 L C C5
 U 1 1 5A10FCA2
@@ -557,10 +330,10 @@ F 3 "" H 3200 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR14
+L +5V #PWR13
 U 1 1 5A10FF98
 P 3000 1950
-F 0 "#PWR14" H 3000 1800 50  0001 C CNN
+F 0 "#PWR13" H 3000 1800 50  0001 C CNN
 F 1 "+5V" H 3000 2090 50  0000 C CNN
 F 2 "" H 3000 1950 50  0001 C CNN
 F 3 "" H 3000 1950 50  0001 C CNN
@@ -568,10 +341,10 @@ F 3 "" H 3000 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR15
+L GND #PWR14
 U 1 1 5A1106AC
 P 3000 2450
-F 0 "#PWR15" H 3000 2200 50  0001 C CNN
+F 0 "#PWR14" H 3000 2200 50  0001 C CNN
 F 1 "GND" H 3000 2300 50  0000 C CNN
 F 2 "" H 3000 2450 50  0001 C CNN
 F 3 "" H 3000 2450 50  0001 C CNN
@@ -580,26 +353,15 @@ F 3 "" H 3000 2450 50  0001 C CNN
 $EndComp
 Text GLabel 7150 1400 0    60   Input ~ 0
 A_INT
-Text GLabel 7150 1500 0    60   Input ~ 0
+Text GLabel 7150 2000 0    60   Input ~ 0
 A_CONTROL
-$Comp
-L D D1
-U 1 1 5A11303A
-P 1100 1900
-F 0 "D1" H 1100 2000 50  0000 C CNN
-F 1 "D" H 1100 1800 50  0000 C CNN
-F 2 "Diodes_ThroughHole:Diode_DO-41_SOD81_Vertical_AnodeUp" H 1100 1900 50  0001 C CNN
-F 3 "" H 1100 1900 50  0001 C CNN
-	1    1100 1900
-	-1   0    0    1   
-$EndComp
 $Comp
 L CP C1
 U 1 1 5A11308F
 P 1400 2000
 F 0 "C1" H 1425 2100 50  0000 L CNN
 F 1 "CP" H 1425 1900 50  0000 L CNN
-F 2 "Capacitors_SMD:c_elec_6.3x5.3" H 1438 1850 50  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 1438 1850 50  0001 C CNN
 F 3 "" H 1400 2000 50  0001 C CNN
 	1    1400 2000
 	1    0    0    -1  
@@ -610,7 +372,7 @@ U 1 1 5A113282
 P 1650 1000
 F 0 "C2" H 1675 1100 50  0000 L CNN
 F 1 "CP" H 1675 900 50  0000 L CNN
-F 2 "Capacitors_SMD:c_elec_6.3x5.3" H 1688 850 50  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 1688 850 50  0001 C CNN
 F 3 "" H 1650 1000 50  0001 C CNN
 	1    1650 1000
 	1    0    0    -1  
@@ -624,28 +386,6 @@ F 1 "GND" H 1400 2100 50  0000 C CNN
 F 2 "" H 1400 2250 50  0001 C CNN
 F 3 "" H 1400 2250 50  0001 C CNN
 	1    1400 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L +VSW #PWR27
-U 1 1 5A1143FE
-P 7600 750
-F 0 "#PWR27" H 7600 600 50  0001 C CNN
-F 1 "+VSW" H 7600 890 50  0000 C CNN
-F 2 "" H 7600 750 50  0001 C CNN
-F 3 "" H 7600 750 50  0001 C CNN
-	1    7600 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L +VSW #PWR2
-U 1 1 5A114455
-P 1400 1750
-F 0 "#PWR2" H 1400 1600 50  0001 C CNN
-F 1 "+VSW" H 1400 1890 50  0000 C CNN
-F 2 "" H 1400 1750 50  0001 C CNN
-F 3 "" H 1400 1750 50  0001 C CNN
-	1    1400 1750
 	1    0    0    -1  
 $EndComp
 Text GLabel 2050 1800 1    60   Input ~ 0
@@ -702,7 +442,7 @@ U 1 1 5A117980
 P 1550 3950
 F 0 "P9" H 1550 4750 50  0000 C CNN
 F 1 "CONN_01X15" V 1650 3950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 1550 3950 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15_Pitch2.54mm" H 1550 3950 50  0001 C CNN
 F 3 "" H 1550 3950 50  0000 C CNN
 	1    1550 3950
 	-1   0    0    1   
@@ -713,7 +453,7 @@ U 1 1 5A117AAA
 P 1350 3950
 F 0 "P8" H 1350 4750 50  0000 C CNN
 F 1 "CONN_01X15" V 1450 3950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 1350 3950 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15_Pitch2.54mm" H 1350 3950 50  0001 C CNN
 F 3 "" H 1350 3950 50  0000 C CNN
 	1    1350 3950
 	1    0    0    -1  
@@ -741,7 +481,7 @@ F 3 "" H 1100 3550 50  0001 C CNN
 $EndComp
 Text GLabel 1100 3650 0    60   Input ~ 0
 A_INT
-Text GLabel 1100 3750 0    60   Input ~ 0
+Text GLabel 1100 4250 0    60   Input ~ 0
 A_CONTROL
 Text GLabel 1100 3850 0    60   Input ~ 0
 A_SDA
@@ -751,8 +491,6 @@ Text GLabel 1100 4050 0    60   Input ~ 0
 A_D6
 Text GLabel 1100 4150 0    60   Input ~ 0
 A_D7
-Text GLabel 1100 4250 0    60   Input ~ 0
-A_D8
 Text GLabel 1100 4350 0    60   Input ~ 0
 A_D9
 Text GLabel 1100 4450 0    60   Input ~ 0
@@ -764,10 +502,10 @@ A_MISO
 Text GLabel 1800 4650 2    60   Input ~ 0
 A_SCK
 $Comp
-L +3V3 #PWR29
+L +3V3 #PWR22
 U 1 1 5A11A124
 P 7800 750
-F 0 "#PWR29" H 7800 600 50  0001 C CNN
+F 0 "#PWR22" H 7800 600 50  0001 C CNN
 F 1 "+3V3" H 7800 890 50  0000 C CNN
 F 2 "" H 7800 750 50  0001 C CNN
 F 3 "" H 7800 750 50  0001 C CNN
@@ -885,50 +623,39 @@ $EndComp
 $Comp
 L CONN_01X04 P11
 U 1 1 5A11DBAF
-P 3900 900
-F 0 "P11" H 3900 1150 50  0000 C CNN
-F 1 "CONN_01X04" V 4000 900 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 3900 900 50  0001 C CNN
-F 3 "" H 3900 900 50  0000 C CNN
-	1    3900 900 
+P 3750 900
+F 0 "P11" H 3750 1150 50  0000 C CNN
+F 1 "CONN_01X04" V 3850 900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3750 900 50  0001 C CNN
+F 3 "" H 3750 900 50  0000 C CNN
+	1    3750 900 
 	-1   0    0    1   
 $EndComp
-Text GLabel 4150 850  2    60   Input ~ 0
+Text GLabel 4000 850  2    60   Input ~ 0
 A_SDA
-Text GLabel 4150 950  2    60   Input ~ 0
+Text GLabel 4000 950  2    60   Input ~ 0
 A_SCL
 $Comp
-L GND #PWR19
+L GND #PWR16
 U 1 1 5A11DD56
-P 4150 1100
-F 0 "#PWR19" H 4150 850 50  0001 C CNN
-F 1 "GND" H 4150 950 50  0000 C CNN
-F 2 "" H 4150 1100 50  0001 C CNN
-F 3 "" H 4150 1100 50  0001 C CNN
-	1    4150 1100
+P 4000 1100
+F 0 "#PWR16" H 4000 850 50  0001 C CNN
+F 1 "GND" H 4000 950 50  0000 C CNN
+F 2 "" H 4000 1100 50  0001 C CNN
+F 3 "" H 4000 1100 50  0001 C CNN
+	1    4000 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR18
+L +5V #PWR15
 U 1 1 5A11DEC9
-P 4150 700
-F 0 "#PWR18" H 4150 550 50  0001 C CNN
-F 1 "+5V" H 4150 840 50  0000 C CNN
-F 2 "" H 4150 700 50  0001 C CNN
-F 3 "" H 4150 700 50  0001 C CNN
-	1    4150 700 
+P 4000 700
+F 0 "#PWR15" H 4000 550 50  0001 C CNN
+F 1 "+5V" H 4000 840 50  0000 C CNN
+F 2 "" H 4000 700 50  0001 C CNN
+F 3 "" H 4000 700 50  0001 C CNN
+	1    4000 700 
 	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X04 P10
-U 1 1 5A11E70A
-P 3550 900
-F 0 "P10" H 3550 1150 50  0000 C CNN
-F 1 "CONN_01X04" V 3650 900 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 3550 900 50  0001 C CNN
-F 3 "" H 3550 900 50  0000 C CNN
-	1    3550 900 
-	-1   0    0    1   
 $EndComp
 Text Notes 1800 1400 0    60   ~ 0
 Input power AX and headers AX\n
@@ -944,10 +671,6 @@ Text Notes 500  2500 0    60   ~ 0
 Input 12V \n
 Text Notes 6500 3150 0    60   ~ 0
 Arduino NANO\n
-Text Notes 7150 5450 0    60   ~ 0
-MCP2551
-Text Notes 4750 5450 0    60   ~ 0
-MCP2515
 Text Notes 500  2750 0    60   ~ 0
 Arduino NANO\nextra pinout
 Text GLabel 5800 900  2    60   Input ~ 0
@@ -1009,10 +732,10 @@ F 3 "" H 9100 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR33
+L +5V #PWR26
 U 1 1 5A15EE6E
 P 8900 700
-F 0 "#PWR33" H 8900 550 50  0001 C CNN
+F 0 "#PWR26" H 8900 550 50  0001 C CNN
 F 1 "+5V" H 8900 840 50  0000 C CNN
 F 2 "" H 8900 700 50  0001 C CNN
 F 3 "" H 8900 700 50  0001 C CNN
@@ -1020,21 +743,125 @@ F 3 "" H 8900 700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR34
+L +5V #PWR27
 U 1 1 5A15EEE2
 P 9100 700
-F 0 "#PWR34" H 9100 550 50  0001 C CNN
+F 0 "#PWR27" H 9100 550 50  0001 C CNN
 F 1 "+5V" H 9100 840 50  0000 C CNN
 F 2 "" H 9100 700 50  0001 C CNN
 F 3 "" H 9100 700 50  0001 C CNN
 	1    9100 700 
 	1    0    0    -1  
 $EndComp
+Text Notes 8750 1600 0    60   ~ 0
+I2C pullup\n
+Text GLabel 2800 3500 2    60   Input ~ 0
+A_SS
+Text GLabel 2800 3600 2    60   Input ~ 0
+A_MOSI
+$Comp
+L GND #PWR12
+U 1 1 5A483FBA
+P 2800 3750
+F 0 "#PWR12" H 2800 3500 50  0001 C CNN
+F 1 "GND" H 2800 3600 50  0000 C CNN
+F 2 "" H 2800 3750 50  0001 C CNN
+F 3 "" H 2800 3750 50  0001 C CNN
+	1    2800 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 3250 3500 0    39   ~ 0
+SS RX
+Text Notes 3250 3650 0    39   ~ 0
+SS TX
+Text GLabel 5050 3900 3    60   Input ~ 0
+A_D9
+Text GLabel 1100 3750 0    60   Input ~ 0
+A_D3
+$Comp
+L CONN_01X02 P6
+U 1 1 5A48AE3C
+P 3750 3600
+F 0 "P6" H 3750 3750 50  0000 C CNN
+F 1 "CONN_01X02" V 3850 3600 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 3750 3600 50  0001 C CNN
+F 3 "" H 3750 3600 50  0000 C CNN
+	1    3750 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C3
+U 1 1 5A48B9C7
+P 4200 3600
+F 0 "C3" H 4225 3700 50  0000 L CNN
+F 1 "CP" H 4225 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 4238 3450 50  0001 C CNN
+F 3 "" H 4200 3600 50  0001 C CNN
+	1    4200 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 3350 1    60   Input ~ 0
+A_A1
+Text GLabel 4450 3900 3    60   Input ~ 0
+A_D6
+$Comp
+L CONN_01X03 P7
+U 1 1 5A48E408
+P 4750 3600
+F 0 "P7" H 4750 3800 50  0000 C CNN
+F 1 "CONN_01X03" V 4850 3600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4750 3600 50  0001 C CNN
+F 3 "" H 4750 3600 50  0000 C CNN
+	1    4750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P12
+U 1 1 5A48E537
+P 5350 3600
+F 0 "P12" H 5350 3800 50  0000 C CNN
+F 1 "CONN_01X03" V 5450 3600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5350 3600 50  0001 C CNN
+F 3 "" H 5350 3600 50  0000 C CNN
+	1    5350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +VSW #PWR20
+U 1 1 5A1143FE
+P 7600 750
+F 0 "#PWR20" H 7600 600 50  0001 C CNN
+F 1 "+VSW" H 7600 890 50  0000 C CNN
+F 2 "" H 7600 750 50  0001 C CNN
+F 3 "" H 7600 750 50  0001 C CNN
+	1    7600 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 5A11303A
+P 1100 1900
+F 0 "D1" H 1100 2000 50  0000 C CNN
+F 1 "D" H 1100 1800 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-41_SOD81_Vertical_AnodeUp" H 1100 1900 50  0001 C CNN
+F 3 "" H 1100 1900 50  0001 C CNN
+	1    1100 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L +VSW #PWR2
+U 1 1 5A114455
+P 1400 1750
+F 0 "#PWR2" H 1400 1600 50  0001 C CNN
+F 1 "+VSW" H 1400 1890 50  0000 C CNN
+F 2 "" H 1400 1750 50  0001 C CNN
+F 3 "" H 1400 1750 50  0001 C CNN
+	1    1400 1750
+	1    0    0    -1  
+$EndComp
 Connection ~ 2150 900 
 Connection ~ 2500 900 
 Connection ~ 2500 1100
-Wire Wire Line
-	2100 1000 2850 1000
 Connection ~ 2500 1000
 Connection ~ 2150 1000
 Wire Wire Line
@@ -1123,78 +950,6 @@ Wire Wire Line
 	5900 1700 5950 1700
 Connection ~ 4450 2700
 Wire Wire Line
-	3950 4900 3950 4950
-Wire Wire Line
-	3950 3300 3950 3250
-Wire Wire Line
-	4550 3500 4600 3500
-Wire Wire Line
-	4550 3600 4600 3600
-Wire Wire Line
-	5700 3950 5750 3950
-Wire Wire Line
-	5700 4050 5750 4050
-Wire Wire Line
-	6750 4050 7150 4050
-Wire Wire Line
-	7000 4050 7000 4650
-Wire Wire Line
-	7000 4650 6850 4650
-Wire Wire Line
-	6850 4650 6850 4600
-Wire Wire Line
-	6750 4250 7100 4250
-Wire Wire Line
-	6850 4250 6850 4300
-Connection ~ 6850 4250
-Connection ~ 7000 4050
-Wire Wire Line
-	7100 4250 7100 4150
-Wire Wire Line
-	7100 4150 7150 4150
-Wire Wire Line
-	7150 4250 7150 4300
-Wire Wire Line
-	6250 3700 6250 3750
-Wire Wire Line
-	6250 4550 6250 4750
-Wire Wire Line
-	5700 4750 5700 4700
-Wire Wire Line
-	5700 4400 5700 4350
-Wire Wire Line
-	5700 4350 5750 4350
-Wire Wire Line
-	4550 4700 4600 4700
-Wire Wire Line
-	4600 4700 4600 4750
-Wire Wire Line
-	4600 5050 4600 5100
-Wire Wire Line
-	3250 3500 3350 3500
-Wire Wire Line
-	3250 3600 3350 3600
-Wire Wire Line
-	3250 3700 3350 3700
-Wire Wire Line
-	3250 3800 3350 3800
-Wire Wire Line
-	3300 4300 3350 4300
-Wire Wire Line
-	3300 4150 3300 4300
-Wire Wire Line
-	3000 4150 3000 4200
-Wire Wire Line
-	3000 4500 3000 4550
-Wire Wire Line
-	3300 4550 3300 4400
-Wire Wire Line
-	3300 4400 3350 4400
-Connection ~ 3000 4150
-Connection ~ 3000 4550
-Wire Wire Line
-	4550 4100 4600 4100
-Wire Wire Line
 	2800 2050 2800 2000
 Wire Wire Line
 	2800 2000 3200 2000
@@ -1221,8 +976,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 800  1750 900 
 Wire Wire Line
-	1750 900  2850 900 
-Wire Wire Line
 	1150 1100 1550 1100
 Wire Wire Line
 	1550 1100 1550 1200
@@ -1231,8 +984,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 1200 1750 1100
 Wire Wire Line
-	1750 1100 2850 1100
-Wire Wire Line
 	1650 1150 1650 1250
 Connection ~ 1650 1200
 Wire Wire Line
@@ -1240,13 +991,6 @@ Wire Wire Line
 Connection ~ 1650 800 
 Wire Wire Line
 	900  1900 950  1900
-Wire Wire Line
-	1300 1900 1250 1900
-Wire Wire Line
-	1300 1800 1300 1900
-Wire Wire Line
-	1400 1750 1400 1850
-Connection ~ 1400 1800
 Wire Wire Line
 	900  2000 1300 2000
 Wire Wire Line
@@ -1257,8 +1001,6 @@ Wire Wire Line
 	1400 2150 1400 2250
 Connection ~ 1400 2200
 Wire Wire Line
-	1400 1800 1300 1800
-Wire Wire Line
 	2050 1800 2050 1850
 Wire Wire Line
 	2050 2150 2050 2250
@@ -1268,7 +1010,7 @@ Wire Wire Line
 	2050 2200 2100 2200
 Connection ~ 2050 2200
 Wire Wire Line
-	2150 1100 2500 1100
+	1750 1100 2500 1100
 Connection ~ 2150 1100
 Wire Wire Line
 	8200 1200 8250 1200
@@ -1335,39 +1077,15 @@ Wire Wire Line
 Wire Wire Line
 	1800 3250 1750 3250
 Wire Wire Line
-	2900 4550 3300 4550
-Wire Wire Line
-	2900 4150 3300 4150
-Wire Wire Line
-	2600 4550 2550 4550
-Wire Wire Line
-	2600 4150 2550 4150
-Wire Wire Line
 	1800 1800 1800 1850
 Wire Wire Line
 	1800 2150 1800 2200
 Wire Wire Line
 	1800 2500 1800 2550
 Wire Wire Line
-	4150 750  4150 700 
+	4000 750  4000 700 
 Wire Wire Line
-	4150 1050 4150 1100
-Connection ~ 4100 750 
-Connection ~ 3750 750 
-Connection ~ 4100 850 
-Connection ~ 3750 850 
-Connection ~ 4100 950 
-Connection ~ 3750 950 
-Connection ~ 4100 1050
-Connection ~ 3750 1050
-Wire Wire Line
-	3750 750  4150 750 
-Wire Wire Line
-	3750 850  4150 850 
-Wire Wire Line
-	3750 950  4150 950 
-Wire Wire Line
-	3750 1050 4150 1050
+	4000 1050 4000 1100
 Wire Notes Line
 	450  1450 4600 1450
 Wire Notes Line
@@ -1383,19 +1101,11 @@ Wire Notes Line
 Wire Notes Line
 	1600 3000 5200 3000
 Wire Notes Line
-	2300 3000 2300 5500
-Wire Notes Line
 	2300 4800 500  4800
-Wire Notes Line
-	5200 3000 5200 5500
-Wire Notes Line
-	2300 5500 7650 5500
 Wire Notes Line
 	5200 3200 8700 3200
 Wire Notes Line
-	7650 5500 7650 3200
-Wire Notes Line
-	3500 1450 3500 3000
+	3500 1450 3500 4400
 Wire Notes Line
 	6450 500  6450 3200
 Wire Notes Line
@@ -1418,10 +1128,115 @@ Wire Wire Line
 	9100 750  9100 700 
 Wire Wire Line
 	8900 750  8900 700 
-Text Notes 8750 1600 0    60   ~ 0
-I2C pullup\n
 Wire Notes Line
 	8700 1650 9300 1650
 Wire Notes Line
 	9300 1650 9300 500 
+Wire Notes Line
+	2300 4800 2300 3000
+Wire Wire Line
+	2700 3500 2800 3500
+Wire Wire Line
+	2700 3600 2800 3600
+Wire Wire Line
+	2700 3700 2800 3700
+Wire Wire Line
+	2800 3700 2800 3750
+Wire Notes Line
+	3500 4100 2300 4100
+Wire Wire Line
+	2100 1000 2500 1000
+Wire Wire Line
+	1750 900  2500 900 
+Wire Wire Line
+	4000 3550 3950 3550
+Wire Wire Line
+	4000 3400 4000 3550
+Wire Wire Line
+	4000 3400 5150 3400
+Wire Wire Line
+	4200 3350 4200 3450
+Connection ~ 4200 3400
+Wire Wire Line
+	3950 3650 4000 3650
+Wire Wire Line
+	4000 3650 4000 3800
+Wire Wire Line
+	4000 3800 5150 3800
+Wire Wire Line
+	4200 3750 4200 3850
+Wire Wire Line
+	4550 3800 4550 3700
+Connection ~ 4200 3800
+Wire Wire Line
+	5150 3800 5150 3700
+Connection ~ 4550 3800
+Wire Wire Line
+	4450 3900 4450 3600
+Wire Wire Line
+	4450 3600 4550 3600
+Wire Wire Line
+	5050 3900 5050 3600
+Wire Wire Line
+	5050 3600 5150 3600
+Wire Wire Line
+	4500 3400 4500 3500
+Wire Wire Line
+	4500 3500 4550 3500
+Wire Wire Line
+	5150 3400 5150 3500
+Connection ~ 4500 3400
+Wire Notes Line
+	5200 3000 5200 3200
+Wire Notes Line
+	3500 4400 5550 4400
+Wire Notes Line
+	5550 4400 5550 3200
+Wire Wire Line
+	1300 1900 1250 1900
+Wire Wire Line
+	1300 1800 1300 1900
+Connection ~ 1400 1800
+Wire Wire Line
+	1400 1800 1300 1800
+Wire Wire Line
+	1400 1750 1400 1850
+Wire Wire Line
+	3950 750  4000 750 
+Wire Wire Line
+	3950 850  4000 850 
+Wire Wire Line
+	3950 1050 4000 1050
+Wire Wire Line
+	3950 950  4000 950 
+$Comp
+L GND #PWR17
+U 1 1 5A4807E8
+P 4200 3850
+F 0 "#PWR17" H 4200 3600 50  0001 C CNN
+F 1 "GND" H 4200 3700 50  0000 C CNN
+F 2 "" H 4200 3850 50  0001 C CNN
+F 3 "" H 4200 3850 50  0001 C CNN
+	1    4200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P5
+U 1 1 5A48101D
+P 2500 3600
+F 0 "P5" H 2500 3800 50  0000 C CNN
+F 1 "CONN_01X03" V 2600 3600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2500 3600 50  0001 C CNN
+F 3 "" H 2500 3600 50  0000 C CNN
+	1    2500 3600
+	-1   0    0    1   
+$EndComp
+Text Notes 4500 4350 0    60   ~ 0
+2x Servo PWM pinouts
+Text Notes 2300 4100 0    60   ~ 0
+UART Communication \nSoft Serial
+Text Notes 7000 6850 0    98   ~ 0
+Arduino Nano extension boad \nwith AX-12 servo power and communication included
+Text Notes 700  5550 0    79   ~ 0
+!WARNING!\n- while programming disconnect jumper for AX EN\n- servo has no protection, watch out!\n
 $EndSCHEMATC
