@@ -1,4 +1,4 @@
-update=недеља, 31. децембар 2017. 15:08:58 CET
+update=четвртак, 08. фебруар 2018. 11:40:52 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -155,13 +165,9 @@ LibName123=Xicor
 LibName124=zetex
 LibName125=Zilog
 LibName126=/home/silardg/Downloads/kicad_ArduinoNano-master/libraries/arduino_nano
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName127=allegro
+LibName128=battery_management
+LibName129=leds
+LibName130=mechanical
+LibName131=microchip_pic24mcu
+LibName132=motors
