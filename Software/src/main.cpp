@@ -5,7 +5,7 @@
 #include "Encoding/COBS.h"
 #include "Encoding/SLIP.h"
 
-#define glavnaSSerial_RX           4
+#define glavnaSSerial_RX           3
 #define glavnaSSerial_TX           7
 #define glavnaSSerial_Baud        9600
 
@@ -130,11 +130,11 @@ void setup() {
     ActuatorPacketSerial.setStream(&actuatorSS);
     ActuatorPacketSerial.setPacketHandler(&actuatoronPacketReceived);
 
+    delay(50);
+
 }
 
 void loop() {
-
   GlavnaPacketSerial.update();
   ActuatorPacketSerial.update();
-
 }
